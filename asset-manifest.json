@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/catmoodTracker/static/css/main.696608e5.css",
+    "main.css": "/catmoodTracker/static/css/main.8507e56d.css",
     "main.js": "/catmoodTracker/static/js/main.ff6ec440.js",
     "static/js/787.f35f862d.chunk.js": "/catmoodTracker/static/js/787.f35f862d.chunk.js",
     "static/media/moodList-bg.svg": "/catmoodTracker/static/media/moodList-bg.3f5449c924045de986a0c5d4f51dd36e.svg",
@@ -9,12 +9,12 @@
     "static/media/logo.svg": "/catmoodTracker/static/media/logo.79996261046cbde531377d39e75fb579.svg",
     "static/media/logo_sm.svg": "/catmoodTracker/static/media/logo_sm.c374ee1e3fdaa5183e70ea96b40612c4.svg",
     "index.html": "/catmoodTracker/index.html",
-    "main.696608e5.css.map": "/catmoodTracker/static/css/main.696608e5.css.map",
+    "main.8507e56d.css.map": "/catmoodTracker/static/css/main.8507e56d.css.map",
     "main.ff6ec440.js.map": "/catmoodTracker/static/js/main.ff6ec440.js.map",
     "787.f35f862d.chunk.js.map": "/catmoodTracker/static/js/787.f35f862d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.696608e5.css",
+    "static/css/main.8507e56d.css",
     "static/js/main.ff6ec440.js"
   ]
 }
