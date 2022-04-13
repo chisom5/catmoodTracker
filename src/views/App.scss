@@ -20,7 +20,8 @@
   height: 550px;
 
   .container-mood-inner {
-    width: 284px;
+    // width: 284px;
+    width: 275px;
     height: inherit;
     margin: auto;
     display: flex;
@@ -169,4 +170,36 @@
 .emjois-item--angry {
   background: rgba(249, 49, 49, 0.1);
   border: 2px solid $textAngryColor;
+}
+
+@media (max-width: 1024px) {
+  .container-inner {
+    width: 85%;
+
+    .container-mood {
+      width: 40%;
+    }
+
+    .container-moodHistory {
+      width: 50%;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .container-inner {
+    width: 90%;
+
+    .container-mood {
+      width: 45%;
+
+      .container-mood-inner {
+        width: 270px;
+      }
+    }
+
+    .container-moodHistory {
+      width: 45%;
+    }
+  }
 }
