@@ -1,0 +1,172 @@
+@import "../variable.scss";
+@import "../components/componentStyle.scss";
+
+.container {
+  display: flex;
+  width: 100%;
+  height: auto;
+}
+.container-inner {
+  width: 80%;
+  margin: 100px auto;
+  display: flex;
+  justify-content: space-between;
+}
+.container-mood {
+  border: 1px solid $borderGray;
+  box-sizing: border-box;
+  border-radius: 15px;
+  width: 36%;
+  height: 550px;
+
+  .container-mood-inner {
+    width: 284px;
+    height: inherit;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    button {
+      border-radius: 5px;
+      color: $white;
+      margin-top: 2.75rem;
+      padding: 8px 20px;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 26px;
+      border: none;
+      cursor: pointer;
+    }
+    .btn-disable {
+      background: $bgDisable;
+    }
+    .btn-active {
+      background-color: $btnActive;
+    }
+
+    #container-mood-title {
+      margin-top: 1.375rem;
+      margin-bottom: 3.563rem;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 26px;
+      text-align: center;
+      color: $textGray;
+    }
+    .container-mood--emjois {
+      display: flex;
+    }
+  }
+}
+
+.container-moodHistory {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .container-moodHistory-headerLogo {
+    display: flex;
+
+    p {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 42px;
+      margin: 0px;
+      margin-left: 10px;
+    }
+  }
+  .container-moodHistory-headerText {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 26px;
+    color: rgba(53, 16, 12, 0.5);
+    margin: 0px;
+  }
+
+  .container-moodHistory-empty {
+    border: 1px solid #efeeee;
+    box-sizing: border-box;
+    border-radius: 5px;
+    width: 345px;
+    height: 264px;
+    margin-top: 3.375rem;
+  }
+
+  .contianer-moodHistory-empty-inner {
+    width: 122px;
+    height: inherit;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    p {
+      font-size: 16px;
+      line-height: 18px;
+      text-align: center;
+      margin: 0px;
+      margin-top: 5px;
+      color: $textColorEmpty;
+    }
+  }
+
+  // list
+  .container-moodHistory-list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 1.5rem;
+  }
+}
+
+.container-mood--currentEmjoi {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 26px;
+  margin-top: 0.85rem;
+}
+.container-mood--currentEmjoi--happy {
+  color: $textSuccessColor;
+}
+.container-mood--currentEmjoi--indifferent {
+  color: $textIndifferentColor;
+}
+.container-mood--currentEmjoi--angry {
+  color: $textAngryColor;
+}
+
+.container-mood--emjois-item {
+  width: 55px;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 22px;
+  border-radius: 50%;
+  margin-right: 1.25rem;
+  background: rgba(175, 170, 168, 0.2);
+
+  &:last-child {
+    margin-right: 0px;
+  }
+}
+
+.emjois-item--happy {
+  background: rgba(50, 194, 82, 0.2);
+  border: 2px solid $textSuccessColor;
+}
+.emjois-item--indifferent {
+  background: rgba(255, 150, 53, 0.2);
+  border: 2px solid $textIndifferentColor;
+}
+.emjois-item--angry {
+  background: rgba(249, 49, 49, 0.1);
+  border: 2px solid $textAngryColor;
+}

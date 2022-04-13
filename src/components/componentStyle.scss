@@ -1,0 +1,46 @@
+.container-moodHistory-list--item {
+  background: rgba(243, 244, 246, 0.7);
+  border: 1px solid #c4c4c4;
+  box-sizing: border-box;
+  border-radius: 5px;
+  width: 100%;
+  height: auto;
+  padding: 15px 21px;
+  display: flex;
+  margin-bottom: 1rem;
+  position: relative;
+
+  &:last-child {
+    margin-bottom: 0px;
+  }
+
+  #moodHistory-list--item-date {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    color: $textGray;
+  }
+
+  .container-mood--emjois-item-mr1{
+      margin-right: 0.75rem;
+  }
+}
+
+.container-moodHistory-list--item-bg {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  display: flex;
+  z-index: -1;
+}
+
+.container-moodHistory-list--item--happy {
+  border: 2px solid $textSuccessColor;
+}
+.container-moodHistory-list--item--indifferent {
+  border: 2px solid $textIndifferentColor;
+}
+.container-moodHistory-list--item--angry {
+  border: 2px solid $textAngryColor;
+}
